@@ -1,0 +1,34 @@
+{
+  "name": "debade-trigger",
+  "version": "0.0.0",
+  "description": "DeBaDe Trigger for RabbitMQ",
+  "main": "index.js",
+  "bin": {
+    "debade-agent": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamfat/debade-trigger.git"
+  },
+  "keywords": [
+    "MessageQueue",
+    "MQ",
+    "AMQP"
+  ],
+  "author": "Jia Huang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamfat/debade-trigger/issues"
+  },
+  "homepage": "https://github.com/iamfat/debade-trigger",
+  "dependencies": {
+    "amqplib": "*",
+    "http-jsonrpc": "*",
+    "js-yaml": "*",
+    "optimist": "^0.6.1",
+    "winston": "*"
+  }
+}
