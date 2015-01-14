@@ -1,6 +1,6 @@
 {
   "name": "debade-trigger",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "DeBaDe Trigger for RabbitMQ",
   "main": "index.js",
   "bin": {
