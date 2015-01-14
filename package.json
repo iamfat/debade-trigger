@@ -4,7 +4,7 @@
   "description": "DeBaDe Trigger for RabbitMQ",
   "main": "index.js",
   "bin": {
-    "debade-agent": "./index.js"
+    "debade-trigger": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
