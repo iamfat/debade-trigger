@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var logger = require('./lib/logger');
 
 logger.info(">> DeBaDe Trigger Server <<");
