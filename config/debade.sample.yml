@@ -9,6 +9,10 @@ subscribers:
     secret: YOURSECRET
     channels:
       - exchange: "demo"
+        type: "topic"
+        routing_keys:
+          - topic1
+          - topic2
         callback:
           url: "http://demo.local/api"
           method: "demo/getNotified"
