@@ -30,6 +30,7 @@
     "js-yaml": "*",
     "optimist": "^0.6.1",
     "when": "^3.7.2",
-    "winston": "*"
+    "winston": "*",
+    "nodestalker": "*"
   }
 }

@@ -8,11 +8,21 @@ subscribers:
   "demo":
     secret: YOURSECRET
     channels:
-      - exchange: "demo"
+      - exchange: "rpc"
         type: "topic"
         routing_keys:
           - topic1
           - topic2
         callback:
+          type: 'http-jsonrpc'
           url: "http://demo.local/api"
           method: "demo/getNotified"
+      - exchange: "beanstalkd"
+        type: "topic"
+        routing_keys:
+          - topic1
+          - topic2
+        callback:
+          type: 'beanstalkd'
+          url: 127.0.0.1
+          tube: tubeName
