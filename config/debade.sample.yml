@@ -5,24 +5,24 @@ mq:
   password: guest
 debug: false
 subscribers:
-  "demo":
+  demo:
     secret: YOURSECRET
     channels:
-      - exchange: "rpc"
-        type: "topic"
+      - exchange: rpc
+        type: topic
         routing_keys:
           - topic1
           - topic2
         callback:
-          type: 'http-jsonrpc'
-          url: "http://demo.local/api"
-          method: "demo/getNotified"
-      - exchange: "beanstalkd"
-        type: "topic"
+          type: http-jsonrpc
+          url: http://demo.local/api
+          method: demo/getNotified
+      - exchange: beanstalk
+        type: topic
         routing_keys:
           - topic1
           - topic2
         callback:
-          type: 'beanstalkd'
+          type: beanstalk
           url: 127.0.0.1
           tube: tubeName
