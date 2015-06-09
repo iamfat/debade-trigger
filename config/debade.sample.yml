@@ -26,3 +26,12 @@ subscribers:
           type: beanstalk
           url: 127.0.0.1:11300
           tube: tubeName
+      - exchange: socket.io
+        type: topic
+        routing_keys:
+          - topic1
+          - topic2
+        callback:
+          type: socket.io
+          url: http://127.0.0.1:7890
+          event: eventName
