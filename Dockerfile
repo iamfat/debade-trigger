@@ -1,7 +1,7 @@
 FROM alpine:3.4
 
 ADD . /app
-RUN apk add --no-cache nodejs python make g++ zeromq zeromq-dev && cd /app && npm install \
+RUN apk add --no-cache nodejs libzmq python make g++ zeromq-dev && cd /app && npm install \
     && mkdir -p /etc/debade && cp config/debade.sample.yml /etc/debade/trigger.yml \
     && apk del zeromq-dev g++ make python
 
