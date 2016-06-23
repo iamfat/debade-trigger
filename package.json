@@ -28,10 +28,11 @@
     "amqplib": "*",
     "http-jsonrpc": "*",
     "js-yaml": "*",
+    "nodestalker": "*",
     "optimist": "^0.6.1",
+    "promise": "*",
     "when": "^3.7.2",
     "winston": "*",
-    "nodestalker": "*",
-    "promise": "*"
+    "zmq": "^2.15.3"
   }
 }
